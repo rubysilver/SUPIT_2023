@@ -1,0 +1,125 @@
+.login-page-flexbox {
+  display: flex;
+  flex-direction: column;
+}
+
+.authentication-section {
+  background-color: white;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  z-index: 1;
+  min-height: 500px;
+}
+
+/* Sign in */
+
+.sign-in-form {
+  display: flex;
+  flex-direction: column;
+  margin: 2px;
+}
+
+.sign-in-form p {
+  margin: 4px;
+}
+
+.sign-in-form input,
+.sign-in-form button {
+  margin-bottom: 5px;
+}
+
+.sign-in-form h2 {
+  margin-bottom: 20px;
+}
+
+.sign-in-form button {
+  color: white;
+  background-color: black;
+  border: none;
+  border-radius: 3px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  margin-top: 8px;
+  transition: background-color 0.25s, box-shadow 0.25s;
+}
+
+.sign-in-form button:hover {
+  background-color: rgb(35, 35, 35);
+  box-shadow: 0 0 4px rgb(0, 0, 0, 0.55);
+}
+
+.sign-in-form button:active {
+  background-color: rgb(50, 50, 50);
+}
+
+.sign-in-form input:focus {
+  outline: none;
+}
+
+.error-message {
+  font-size: 12px;
+  color: red;
+  width: 250px;
+}
+
+/*Footer*/
+
+.footer-text {
+  position: absolute;
+  z-index: 1;
+  bottom: 20%;
+  left: 30%;
+}
+
+.footer-text h1 {
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size: 3vw;
+  text-align: center;
+  margin-bottom: 20px;
+  text-shadow: 0px 0px 0 #000, 0px 0px 0 #000, 0px 0px 0 #000, 2px 1px 0 #000;
+}
+
+.top-text {
+  color: white;
+}
+.bottom-text {
+  color: rgb(179, 0, 0);
+}
+
+.footer-picture {
+  position: relative; 
+  margin-top: 0px;
+  clear: both;
+  z-index: -1;
+}
+
+.footer-picture img {
+  width: 100%;
+  max-height: 300px;
+}
+
+@media all and (max-width: 620px) {
+  .authentication-section {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    top: 350px;
+  }
+  .standard-footer,
+  .sign-in-form h2 {
+    display: none;
+  }
+  .sign-in-form {
+    margin-bottom: 120px;
+  }
+}
+
+@media all and (max-height: 700px){
+  .authentication-section {
+    z-index: 3;
+    top: 0px;
+  }
+}

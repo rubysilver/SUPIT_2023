@@ -1,0 +1,155 @@
+body {
+  background-color: white;
+}
+
+.news-flexbox {
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  z-index: 1;
+}
+
+.news-items-flex {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: auto;
+  z-index: 1;
+  padding: 50px;
+}
+
+.outer-div {
+  width: 200px;
+  height: 200px;
+  margin: 25px;
+  overflow: hidden;
+  border-radius: 200px;
+  border-style: solid;
+  border-width: 18px;
+  border-color: white;
+  box-shadow: 0px 0px 4px rgba(25,25,25, 0.45);
+  animation: zoom-in 2s;
+
+  transition: transform 0.25s;
+}
+
+.outer-div:hover {
+  transform: scale(1.2);
+}
+
+.news-items-flex div:hover {
+  box-shadow: 0 0 12px rgba(25,25,25, 0.45);
+}
+
+.news-items-flex div img {
+  position: relative;
+  width: 200px;
+  height: 200px;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.news-info {
+  z-index: 1;
+  position: absolute;
+  left: 20px;
+}
+
+.date, .news-text {
+  z-index: 1;
+}
+
+.footer-text {
+  position: absolute;
+  z-index: 1;
+  bottom: 20%;
+  left: 30%;
+}
+
+.footer-text h1 {
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size: 3vw;
+  text-align: center;
+  margin-bottom: 20px;
+  text-shadow: 0px 0px 0 #000, 0px 0px 0 #000, 0px 0px 0 #000, 2px 1px 0 #000;
+}
+
+.top-text {
+  color: white;
+}
+.bottom-text {
+  color: rgb(179, 0, 0);
+}
+
+.footer-picture {
+  position: relative;
+  margin-top: 35px;
+  clear: both;
+  z-index: -1;
+}
+
+.footer-picture img {
+  width: 100%;
+  max-height: 300px;
+  clip: rect(5px,0px,0px,0px);
+}
+
+/*Title*/
+
+.title-hr {
+  border: 0;
+  clear:both;
+  display:block;
+  width: 96%;               
+  background-color:#f4b310;
+  height: 3px;
+}
+
+
+.title-about-us {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: auto;
+  width: 50%;
+  margin-top: 20px;
+  margin-bottom: 40px;
+}
+
+.title-about-us h1 {
+  margin-bottom: 20px;
+  margin-top: 20px;
+  font-size: 26px;
+}
+
+.news-info {
+  z-index: 1;
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  top: 0;
+}
+
+@keyframes zoom-in{
+  0% {
+    opacity: 0;
+    transform: translateX(50px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateX(0px);
+  }
+}
+
+@media all and (max-width: 620px) {
+  body {
+    padding-top: 350px;
+  }
+  .news-items-flex {
+    flex-direction: column;
+  }
+}

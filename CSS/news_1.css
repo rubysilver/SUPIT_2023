@@ -1,0 +1,145 @@
+.gallery-image {
+  width: 100%;
+}
+
+body {
+  background-color: white;
+}
+
+.gallery-image img {
+  position: relative;
+  width: 100%;
+  object-fit: fill;
+  top: 20px;
+  left: 0;
+}
+
+.title-hr {
+  border: 0;
+  clear:both;
+  display:block;
+  width: 96%;               
+  background-color:#f4b310;
+  height: 3px;
+}
+
+
+.title-about-us {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: auto;
+  width: 50%;
+  margin-top: 20px;
+  margin-bottom: 40px;
+}
+
+.title-about-us h1 {
+  margin-bottom: 20px;
+  margin-top: 20px;
+  font-size: 26px;
+}
+
+.news-text {
+  margin: auto;
+  width: 60%;
+}
+
+.absolute-txt {
+  font-size: 32px;
+  z-index: 1;
+  position: absolute;
+  left: 25%;
+  top: 40%;
+  color: white;
+  font-weight: bold;
+  width: 600px;
+  text-shadow: 0px 0px 0 #000, 0px 0px 0 #000, 0px 0px 0 #000, 2px 1px 0 #000;
+}
+
+.world-skills {
+  width: 40%;
+}
+
+.main-content-flex {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  row-gap: 50px;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+.first-div {
+  margin-left: 35%;
+}
+
+.first-div img {
+  width: 20%;
+}
+
+.first-div img:hover {
+  transform: scale(1.2);
+}
+
+.first-div img:hover {
+  box-shadow: 0 0 4px rgba(25,25,25, 0.45);
+}
+
+
+.footer-text {
+  position: absolute;
+  z-index: 1;
+  bottom: 20%;
+  left: 30%;
+}
+
+.footer-text h1 {
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size: 3vw;
+  text-align: center;
+  margin-bottom: 20px;
+  text-shadow: 0px 0px 0 #000, 0px 0px 0 #000, 0px 0px 0 #000, 2px 1px 0 #000;
+}
+
+.top-text {
+  color: white;
+}
+.bottom-text {
+  color: rgb(179, 0, 0);
+}
+
+.footer-picture {
+  position: relative;
+  margin-top: 35px;
+  clear: both;
+  z-index: -1;
+}
+
+.footer-picture img {
+  width: 100%;
+  max-height: 300px;
+  clip: rect(5px,0px,0px,0px);
+}
+
+@media all and (max-width: 1200px){
+  .absolute-txt {
+    display: none;
+  }
+}
+
+@media all and (max-width: 620px) {
+  body {
+    padding-top: 330px;
+  }
+  .first-div img {
+    width: 50%;
+  }
+  .world-skills {
+    width: 80%;
+  }
+  .absolute-txt {
+    display: none;
+  }
+}

@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Poppins:wght@300&family=Roboto:ital,wght@1,900&family=Space+Mono&display=swap');
+
+.main-page-flexbox {
+  display: flex;
+  flex-direction: column;
+}
+
+video {
+  position: fixed;
+  top: 8%;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  object-fit: fill;
+  max-width: 100%;
+  min-height: 100%;
+}
+
+/* Typewriter effect */
+
+.typewriter {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 70vh;
+  width: 43%;
+  margin: auto;
+}
+
+.typewriter h1 {
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  z-index: 2;
+  color: white;
+  font-weight: 500;
+  text-shadow: 0px 0px 0 #000, 0px 0px 0 #000, 0px 0px 0 #000, 2px 1px 0 #000;
+  font-size: 3vw;
+  -webkit-text-size-adjust:none;
+  -ms-text-size-adjust:none;
+  -moz-text-size-adjust:none; 
+  text-size-adjust:none;
+}
+
+.auto-typed-two {
+  color: rgb(179, 0, 0);
+  font-weight: 700;
+}
+
+.typed-cursor {
+  font-size: 34px;
+  background-color: white;
+  margin-left: 2px;
+  padding-left: 7px;
+  padding-right: 7px;
+  text-shadow: none;
+  font-size: 3vw;
+}
+
+.logged-in {
+  width: 20%;
+  fill: white;
+}
+
+.logged-in-anchor {
+  width: 10%;
+}
+
+.logged-in:hover {
+  fill: rgb(255, 255, 146);
+}
+
+.curriculum svg {
+  width: 20%;
+}
+
+@media all and (max-width: 620px){
+  .active-user {
+    visibility: hidden;
+  }
+  video {
+    top: 350px;
+  }
+  .typewriter {
+    justify-content: end;
+  }
+  .typewriter h1 {
+    font-size: 24px;
+  }
+}
+
+@media all and (max-width: 620px) and  (max-height: 700px){
+  .main-header {
+  height: 100%;
+  }
+  video {
+  display: none;
+  height: 0;
+  }
+  .typewriter {
+    display: none;
+  }
+}

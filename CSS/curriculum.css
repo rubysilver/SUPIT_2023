@@ -1,0 +1,32 @@
+.curriculum-div {
+  display: flex;
+  flex-direction: column;
+  width: 500px;
+}
+
+.curriculum-input {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.main-content-flex {
+  min-height: 500px;
+}
+
+.boxes {
+  display: flex;
+  flex-direction: column;
+  margin-left: 100px;
+}
+
+.input-field-c {
+  width: 200px;
+}
+
+.input-field-div {
+  margin-right: 100px;
+  display: flex;
+  flex-direction: row;
+  height: 20px;
+}
